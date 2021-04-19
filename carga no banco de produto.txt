@@ -1,0 +1,31 @@
+insert into PRODUTO(IDPRODUTO, NOME, PRECO, DESCRICAO)
+values(NEWID(), 'Mouse', 30, 'Mouse Optico')
+go
+
+insert into PRODUTO(IDPRODUTO, NOME, PRECO, DESCRICAO)
+values(NEWID(), 'Notebook', 3500, 'Notebook Dell')
+go
+
+insert into PRODUTO(IDPRODUTO, NOME, PRECO, DESCRICAO)
+values(NEWID(), 'Impressora', 400, 'Impressora Multifuncional')
+go
+
+insert into PRODUTO(IDPRODUTO, NOME, PRECO, DESCRICAO)
+values(NEWID(), 'Teclado', 100, 'Teclado microsoft')
+go
+
+insert into PRODUTO(IDPRODUTO, NOME, PRECO, DESCRICAO)
+values(NEWID(), 'Mochila', 250, 'Mochila para Notebook')
+go
+
+
+
+--select do produto e do item do produto cadastrado 
+select * from PEDIDO p
+inner join CLIENTE c
+on c.IDCLIENTE = p.IDCLIENTE
+inner join ITEMPEDIDO ip
+on p.IDPEDIDO = ip.IDPEDIDO
+inner join PRODUTO pr
+on ip.IDPRODUTO = pr.IDPRODUTO
+

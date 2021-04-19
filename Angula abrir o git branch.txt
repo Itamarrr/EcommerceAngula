@@ -1,0 +1,49 @@
+verificar a verssão do node instalado 
+comando no git bach
+node -v
+
+comando pra instalar o Angula que vem do git por ser codigo aberto 
+npm install -g @angular/cli
+
+
+para verificar se o Angula foi instalado colaca esse comando 
+ng version
+
+comando pra lipar a tela do git bach 
+clear
+
+para criar o projeto 
+ng new projetoEcommerce
+
+entrar na pasta do projeto pelo git e depois dar o comando 
+code .
+
+pro rodar o projeto 
+
+ng s
+
+quando executar ele te da um  httplocalhost:4200
+
+é só pegar e colocar no navegador 
+http://localhost:4200/
+
+para o servidor 
+control c
+
+criar um componente 
+ng g c lojaProdutos
+
+criar outro componente ou seja pagina 
+ng g c cadastroCliente
+
+criar outro componente ou seja pagina 
+ng g c cadastroCliente
+
+criando a tela de login 
+ng g c acessoCliente
+
+crinado outro componente ou seja uma nova pagina
+ng g c cestaDeCompras
+
+para configurar os componente é dentro do arquivo app.module.ts que fica dentro do sr-app
+app.module.ts
